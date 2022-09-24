@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.link {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: rgb(83, 0, 0);
+}
+
+p, ul {
+    font-size: 25px;
+}
+
+.a {
+    color: white;
+    background-color: black;
+    margin-top: 0;
+}
+
+.p-bottom {
+    margin-bottom: 0;
+}

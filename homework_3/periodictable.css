@@ -1,0 +1,97 @@
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.groups_elem {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1fd9eba;
+}
+
+.period {
+    background-color: #f1fd9eba;
+}
+
+.groups_A {
+    margin: 0 20px 0 5px;
+}
+
+.groups_num {
+    margin: 0;
+}
+
+.groups_B {
+    margin: 0 5px 0 20px;
+}
+
+.ak_lan {
+    font-size: 10px;
+}
+
+td {
+    padding: 0;
+}
+
+th, tr {
+    padding: 0;
+}
+
+.unit_notmetal_A, .unit_notmetal_B, .unit_metal, .unit_green {
+    border-radius: 5% 5% 5% 5%;
+    width: 88px;
+    height: 88px;
+}
+
+.unit_notmetal_A {
+    background-color: #FDF7E2;
+    color: #8C591D;
+    border: #764814;
+}
+
+.unit_notmetal_B {
+    background-color: #F1E8FB;
+    color: #5A3EE3;
+    border: #3f2ba5;
+
+}
+
+.unit_metal {
+    flex-direction: row-reverse;
+    background-color: #E4EEFD;
+    color: #2163E7;
+    border: #0044cc;
+}
+
+.unit_green {
+    background-color: #DDF8E9;
+    color: #0E2B06;
+    border: #091d03;
+}
+
+.symbol, .name, .number, .mass {
+    margin: 0;
+}
+
+.symbol {
+    font-size: 22px;
+}
+
+.number {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mass {
+    font-size: 10px;
+}
+
+.name {
+    font-size: 10px;
+}
+
+.symbol, .name, .mass {
+    display: flex;
+    justify-content: center;
+}

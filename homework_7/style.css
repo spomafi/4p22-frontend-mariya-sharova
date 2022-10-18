@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1B2473;
+    align-items: center;
+}
+
+.main-form {
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    width: calc(300px + 20.834vw);
+    height: calc(162px + 17.3615vw);
+    margin: 0%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.main-form__h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin-top: calc(11.6px + 1vw);
+    margin-bottom: calc(9.8px + 0.5vw);
+    font-weight: 700;
+    font-size: calc(28.4px + 1.5vw);
+    line-height: calc(28.4px + 1.5vw);
+    color: #787878;
+}
+
+.main-form__email__label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(13.4px + 0.25vw);
+    line-height: calc(13.4px + 0.25vw);
+    margin-bottom: 3px;
+    color: #787878;
+    text-align: left;
+    margin-left: 53px;
+}
+
+.main-form__email {
+    margin-bottom: 2.2222vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(13.6px + 1vw);
+    line-height: calc(21.6px + 1vw);
+    color: #787878;
+    width: calc(210px + 20.834vw);
+    height: calc(27.4px + 1.5vw);
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 10px;
+    padding-left: calc(7.8px + 0.5vw);
+}
+
+.main-form__password__label {
+    display: none;
+}
+
+.main-form__password {
+    margin-bottom: calc(1.6px + 1vw);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(13.6px + 1vw);
+    line-height: calc(21.6px + 1vw);
+    width: calc(210px + 20.834vw);
+    height: calc(27.4px + 1.5vw);
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 10px;
+    padding-left: calc(7.8px + 0.5vw);
+}
+
+.main-form-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-self: center;
+    padding: 1px;
+}
+
+.main-form-container__checkbox {
+    width: calc(9.6px + 1vw);
+    height: calc(9.6px + 1vw);
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    border-radius: 7px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 45px;
+    margin-right: 10px;
+}
+
+.main-form-container__checkbox__label {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(6.8px + 0.5vw);
+    color: #787878;
+    text-align: left;
+}
+
+.main-form__button {
+    margin-top: calc(8.8px + 3vw);
+    margin-bottom: calc(4.4px + 1.5vw);
+    width: calc(90px + 6.25vw);
+    height: calc(23.6px + 2vw);
+    background: #1B2473;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16.8px + 0.5vw);
+    line-height: calc(13.4px + 0.25vw);
+    color: #FFFFFF;
+    border-style: none;
+    border: none;
+}
+
+input[type="email"]::placeholder { color: #CCCCCC; } 
+input[type="password"]::placeholder { color: #CCCCCC; } 
+
+@media (max-width: 720px) {
+    .main-form {
+        width: 94.792vw;
+        height: calc(697/768 * 100vw);
+    }
+
+    .main-form__email__label {
+        margin-left: calc(45/768 * 100vw);
+    }
+
+    .main-form__email, .main-form__password {
+        width: 83.073vw;
+        height: calc(27.4px + 1.5vw);
+    }
+
+    .main-form__password__label {
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(13.4px + 0.25vw);
+        line-height: calc(13.4px + 0.25vw);
+        margin-bottom: 3px;
+        color: #787878;
+        text-align: left;
+        margin-left: 53px;
+        margin-left: calc(45/768 * 100vw);
+    }
+
+    .main-form-container {
+        color: #787878;
+        text-align: left;
+    }
+
+    .main-form-container__checkbox {
+        width: calc(17.6px + 1vw);
+        height: calc(17.6px + 1vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        border-radius: 7px;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 10px;
+        margin-left: calc(45/768 * 100vw);
+    }
+
+    .main-form-container__checkbox__label {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(6.8px + 0.5vw);
+    }
+}

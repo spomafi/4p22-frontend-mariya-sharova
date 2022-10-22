@@ -1,8 +1,294 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-.input-container {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 5.56vw;
+    padding: 1.25vw 2.95vw 0.83vw 2.083vw;
+}
+
+input[type="email"]::placeholder { color: #CCCCCC; } 
+input[type="password"]::placeholder { color: #CCCCCC; } 
+textarea::placeholder { color: #CCCCCC; } 
+
+.logo {
+    margin-right: 2.083vw;
+}
+
+.header__h1 {
+    font-size: 2.5vw;
+    align-self: center;
+    color: rgb(120, 120, 120);
+}
+
+.header-links {
+    margin-left: auto;
+    align-self: center;
+    font-size: 1.66vw;
+    margin-bottom: 0.3vw;
+}
+
+.header-links__registration {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+}
+
+.header-links__input {
+    text-decoration: none;
+    color: rgb(26, 34, 107);
+    margin-left: 1.6vw;
+}
+
+.header-links__input:focus {
+    color: #1A226B;
+}
+
+.header-links__registration:focus {
+    color: #1A226B;
+}
+
+main {
+    background: #FFFFFF;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    width: 41.67vw;
+    height: 60.76vw;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    margin: 8.68vw 29.17vw;
+}
+
+.main-form__h1 {
+    margin: 1.81vw 0 1.18vw 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.47vw;
+    line-height: 3.47vw;
+    color: #787878;
+}
+
+.main-form__email__label {
+    margin: 0 0 0.21vw 3.68vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.11vw;
+    color: #787878;
+}
+
+.main-form__email {
+    height: 3.40vw;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    margin-left: 3.13vw;
+    margin-right: 3.13vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 1.042vw;
+    font-size: 1.94vw;
+    margin-bottom: 0.764vw;
+    color: #787878;
+}
+
+.main-form__password__label {
+    margin: 0 0 0.35vw 3.68vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.11vw;
+    color: #787878;
+}
+
+.main-form__password {
+    height: 3.40vw;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    margin-left: 3.13vw;
+    margin-right: 3.13vw;
+    padding-left: 1.042vw;
+    font-size: 1.94vw;
+    color: #787878;
+}
+
+.main-form__password__label__two {
+    margin: 0.76vw 0 0.35vw 3.68vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.11vw;
+    color: #787878;
+}
+
+.main-form__password__two {
+    height: 3.40vw;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    margin-left: 3.13vw;
+    margin-right: 3.13vw;
+    padding-left: 1.042vw;
+    font-size: 1.94vw;
+    color: #787878;
+}
+
+.main-form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.main-form__button1 {
+    width: 12.50vw;
+    height: 3.61vw;
+    background-color: #1A226B;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.67vw;
+    line-height: 1.11vw;
+    margin-top: 3.89vw;
+    margin-bottom: 2.57vw;
+    border-style: none;
+}
+
+.gender__radio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.99vw;
+}
+
+.gender {
+    margin: 0.76vw 0 0.35vw 0;
+    color: rgb(120, 120, 120);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.11vw;
+    padding: 0;
+}
+
+.label-man, .label-women {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.97vw;
+    line-height: 1.11vw;
+    color: #787878;
+}
+
+.gender__man {
+    margin-bottom: 0.4vw;
+    width: 6.94vw;
+    height: 1.94vw;
+}
+
+.gender__women {
+    width: 6.94vw;
+    height: 1.94vw;
+}
+
+.input-man {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input-man + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.input-man + label::before {
+    content: "";
+    display: inline-block;
+    width: 0.7vw;
+    height: 0.7vw;
+    border: 2px solid #787878;
+    background-clip: content-box;
+    border-radius: 50%;
+    padding: 0.21vw;
+    margin-right: 0.7vw;
+}
+
+.input-man:checked + label::before {
+    background-color: #787878;
+}
+
+.input-women {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input-women + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.input-women + label::before {
+    content: "";
+    display: inline-block;
+    width: 0.7vw;
+    height: 0.7vw;
+    border: 2px solid #787878;
+    background-clip: content-box;
+    border-radius: 50%;
+    padding: 0.21vw;
+    margin-right: 0.7vw;
+}
+
+.input-women:checked + label::before {
+    background-color: #787878;
+}
+
+.textarea-container {
+    padding: 0.69vw 3.13vw 1.67vw 3.13vw;
+}
+
+.textarea-text {
+    margin: 0 0 0.35vw 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.11vw;
+    color: #787878;
+}
+
+.textarea {
+    outline: none;
+    width: 100%;
+    height: 17.08vw;
+    border: 2px solid #787878;
+    resize: none;
+    padding-left: 1.04vw;
+    padding-top: 0.49vw;
+    font-size: 1.94vw;
+    color: rgb(120, 120, 120);
+    font-weight: 700;
+}
+
+/* .input-container {
     position: relative;
 }
 
@@ -10,11 +296,12 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
 }
 
 .input-container label {
     padding-left: 25px;
+    
 }
 
 .input-container label::after {
@@ -31,4 +318,85 @@
 
 .input-container input:checked + label::after {
     opacity: 1;
+} */
+
+
+@media (max-width: 768px) {
+    header {
+        height: 10.4166666667vw;
+        padding: 3.1vw 1.5vw 3.6458333333vw 2.6041666667vw;
+    }
+
+    .logo {
+        margin-right: 4.43vw;
+    }
+
+    .header__h1 {
+        font-size: 3.13vw;
+    }
+
+    .header-links__input {
+        margin-left: 4.4vw;
+    }
+
+    .main-form {
+        height: 113.93vw;
+        width: 78.125vw;
+        box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 25%);
+        margin: 10.42vw 11vw;
+    }
+
+    .main-form__h1 {
+        font-size: 6.51vw;
+        margin: 3.39vw 0 2.21vw 0;
+        line-height: 1;
+    }
+
+    .main-form__email__label {
+        margin: 0 0 0.39vw 6.90vw;
+        font-size: 2.083vw;
+    }
+
+    .main-form__email {
+        height: 6.38vw;
+        padding-left: 1.95vw;
+        font-size: 3.64vw;
+        margin-left: 5.86vw;
+        margin-right: 5.86vw;
+    }
+
+    .main-form__password__label {
+        margin: 1.43vw 0 0.39vw 6.90vw;
+        font-size: 2.083vw;
+    }
+
+    .main-form__password {
+        height: 6.38vw;
+        padding-left: 1.95vw;
+        font-size: 3.64vw;
+        margin-left: 5.86vw;
+        margin-right: 5.86vw;
+    }
+
+    .main-form__password__label__two {
+        margin: 1.43vw 0 0.39vw 6.90vw;
+        font-size: 2.083vw;
+    }
+
+    .main-form__password__two {
+        height: 6.38vw;
+        padding-left: 1.95vw;
+        font-size: 3.64vw;
+        margin-left: 5.86vw;
+        margin-right: 5.86vw;
+    }
+
+    .main-form__button1 {
+        width: 23.44vw;
+        height: 6.77vw;
+        font-size: 3.13vw;
+        line-height: 2.08vw;
+        margin-top: 6.77vw;
+        margin-bottom: 4.82vw;
+    }
 }

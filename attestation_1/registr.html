@@ -5,11 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./registr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="input-container">
-        <input type="checkbox">
-        <label></label>
-    </div>
+    <header>
+        <img src="./assets/png/1280px-IU_logo 1.png" class="logo">
+        <h1 class="header__h1">PCS Frontend</h1>
+        <div class="header-links">
+            <a href="./registr.html" class="header-links__registration">Регистрация</a>
+            <a href="#" class="header-links__input">Вход</a>
+        </div>
+    </header>
+    <main>
+        <form class="main-form">
+            <h1 class="main-form__h1">Вход</h1>
+            <p class="main-form__email__label">Email</p>
+            <input type="email" placeholder="Введите email" class="main-form__email">
+            <p class="main-form__password__label">Пароль</p>
+            <input type="password" placeholder="Введите пароль" class="main-form__password">
+            <p class="main-form__password__label__two">Подтверждение пароля</p>
+            <input type="password" placeholder="Подтвердите пароль" class="main-form__password__two">
+            <div class="gender__radio">
+                <legend class="gender">Пол</legend>
+                <div class="gender__man">
+                    <input class="input-man" type="radio" name="sex" id="sex-man" value="man">
+                    <label class="label-man" for="sex-man">Мужчина</label>
+                </div>
+                <div class="gender__women">
+                    <input class="input-women" type="radio" name="sex" id="sex-woman" value="woman">
+                    <label class="label-women" for="sex-woman">Женщина</label>
+                </div>
+            </div>
+            <div class="textarea-container">
+                <p class="textarea-text">О себе</p>
+                <textarea class="textarea" name="comments" id="textarea-comment" placeholder="Расскажите о себе..."></textarea>
+            </div>
+            <!-- <div class="input-container">
+                <input type="checkbox">
+                <label>Я согласен получать обновления на почту</label>
+            </div> -->
+            <div class="main-form__button">
+                <button class="main-form__button1">Регистрация</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

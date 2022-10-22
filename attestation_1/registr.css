@@ -271,7 +271,7 @@ body {
 }
 
 .input-checkbox:checked + label::before {
-    color: #787878;
+    background-color: #787878;
 }
 
 .input-checkbox + label::before {

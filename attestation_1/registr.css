@@ -39,12 +39,12 @@ textarea::placeholder { color: #CCCCCC; }
 
 .header-links__registration {
     text-decoration: none;
-    color: rgb(120, 120, 120);
+     color: #1A226B;
 }
 
 .header-links__input {
     text-decoration: none;
-    color: rgb(26, 34, 107);
+    color: rgb(120, 120, 120);
     margin-left: 1.6vw;
 }
 
@@ -68,6 +68,7 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
     margin: 8.68vw 29.17vw;
+    
 }
 
 .main-form__h1 {
@@ -290,6 +291,7 @@ main {
 
 .checkbox-container {
     margin-left: 2.99vw;
+    height: 1.53vw;
 }
 
 .input-checkbox {
@@ -393,6 +395,19 @@ main {
         font-size: 3.64vw;
         margin-left: 5.86vw;
         margin-right: 5.86vw;
+    }
+
+    .gender__radio {
+        margin-left: 5.60vw;
+    }
+
+    .textarea-container {
+        padding-left: 5.86vw;
+    }
+
+    .textarea {
+        width: 66.41vw;
+        height: 32.03vw;
     }
 
     .main-form__button1 {

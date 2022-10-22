@@ -4,21 +4,12 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 header {
     display: flex;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 5.56vw;
     padding: 1.25vw 2.95vw 0.83vw 2.083vw;
 }
-
-input[type="email"]::placeholder { color: #CCCCCC; } 
-input[type="password"]::placeholder { color: #CCCCCC; } 
-textarea::placeholder { color: #CCCCCC; } 
 
 .logo {
     margin-right: 2.083vw;
@@ -27,7 +18,7 @@ textarea::placeholder { color: #CCCCCC; }
 .header__h1 {
     font-size: 2.5vw;
     align-self: center;
-    color: rgb(120, 120, 120);
+    color: #787878;
 }
 
 .header-links {
@@ -44,7 +35,7 @@ textarea::placeholder { color: #CCCCCC; }
 
 .header-links__input {
     text-decoration: none;
-    color: rgb(120, 120, 120);
+    color: #787878;
     margin-left: 1.6vw;
 }
 
@@ -60,150 +51,103 @@ main {
     background: #FFFFFF;
 }
 
+input[type="email"]::placeholder { color: #CCCCCC; } 
+input[type="password"]::placeholder { color: #CCCCCC; } 
+textarea::placeholder { color: #CCCCCC; } 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 41.67vw;
+    height: auto;
+    box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 25%);
+    margin: 6.8vw 29vw;
+    padding: 1.9vw 3.2vw 2.574vw;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
 .main-form {
     display: flex;
     flex-direction: column;
-    width: 41.67vw;
-    height: 60.76vw;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-    margin: 8.68vw 29.17vw;
-    
+    padding-top: 0.3vw;
 }
 
 .main-form__h1 {
-    margin: 1.81vw 0 1.18vw 0;
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 3.47vw;
-    line-height: 3.47vw;
     color: #787878;
 }
 
 .main-form__email__label {
-    margin: 0 0 0.21vw 3.68vw;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    margin: 0 0 0.2vw 0;
     font-size: 1.11vw;
-    line-height: 1.11vw;
     color: #787878;
 }
 
 .main-form__email {
-    height: 3.40vw;
-    background: #FFFFFF;
+    height: 3.41vw;
+    outline: none;
     border: 2px solid #787878;
-    margin-left: 3.13vw;
-    margin-right: 3.13vw;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     padding-left: 1.042vw;
     font-size: 1.94vw;
-    margin-bottom: 0.764vw;
     color: #787878;
+    font-weight: 700;
+    margin-bottom: 0.77vw;
 }
 
 .main-form__password__label {
-    margin: 0 0 0.35vw 3.68vw;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    margin: 0 0 0.21vw 0;
     font-size: 1.11vw;
-    line-height: 1.11vw;
     color: #787878;
 }
 
 .main-form__password {
-    height: 3.40vw;
-    background: #FFFFFF;
+    height: 3.41vw;
+    outline: none;
     border: 2px solid #787878;
-    margin-left: 3.13vw;
-    margin-right: 3.13vw;
-    padding-left: 1.042vw;
+    padding-left: 1.04vw;
     font-size: 1.94vw;
-    color: #787878;
+    color: rgb(120, 120, 120);
+    font-weight: 700;
+    margin-bottom: 0.76vw;
 }
 
 .main-form__password__label__two {
-    margin: 0.76vw 0 0.35vw 3.68vw;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    margin: 0 0 0.21vw 0;
     font-size: 1.11vw;
-    line-height: 1.11vw;
     color: #787878;
 }
 
 .main-form__password__two {
-    height: 3.40vw;
-    background: #FFFFFF;
+    height: 3.41vw;
+    outline: none;
     border: 2px solid #787878;
-    margin-left: 3.13vw;
-    margin-right: 3.13vw;
-    padding-left: 1.042vw;
+    padding-left: 1.04vw;
     font-size: 1.94vw;
     color: #787878;
-}
-
-.main-form__button {
-    display: flex;
-    justify-content: center;
-}
-
-.main-form__button1 {
-    width: 12.50vw;
-    height: 3.61vw;
-    background-color: #1A226B;
-    color: #FFFFFF;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 1.67vw;
-    line-height: 1.11vw;
-    margin-top: 3.89vw;
-    margin-bottom: 2.57vw;
-    border-style: none;
+    margin-bottom: 0.6vw;
 }
 
 .gender__radio {
     display: flex;
     flex-direction: column;
-    margin-left: 2.99vw;
 }
 
 .gender {
-    margin: 0.76vw 0 0.35vw 0;
-    color: rgb(120, 120, 120);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    margin: 0 0 0.07vw 0;
     font-size: 1.11vw;
-    line-height: 1.11vw;
-    padding: 0;
-}
-
-.label-man, .label-women {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.97vw;
-    line-height: 1.11vw;
     color: #787878;
 }
 
 .gender__man {
+    font-size: 0.97vw;
+    font-weight: 400;
     margin-bottom: 0.4vw;
-    width: 6.94vw;
-    height: 1.94vw;
-}
-
-.gender__women {
-    width: 6.94vw;
-    height: 1.94vw;
 }
 
 .input-man {
@@ -212,10 +156,18 @@ main {
     opacity: 0;
 }
 
+.label-man {
+    color: #787878;
+}
+
 .input-man + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
+}
+
+.input-man:checked +label::before {
+    background-color: #787878;
 }
 
 .input-man + label::before {
@@ -230,8 +182,10 @@ main {
     margin-right: 0.7vw;
 }
 
-.input-man:checked + label::before {
-    background-color: #787878;
+.gender__women {
+    font-size: 0.97vw;
+    font-weight: 400;
+    margin: 0 0 0.3vw 0;
 }
 
 .input-women {
@@ -240,10 +194,18 @@ main {
     opacity: 0;
 }
 
+.label-women {
+    color: #787878;
+}
+
 .input-women + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
+}
+
+.input-women:checked +label::before {
+    background-color: #787878;
 }
 
 .input-women + label::before {
@@ -258,40 +220,33 @@ main {
     margin-right: 0.7vw;
 }
 
-.input-women:checked + label::before {
-    background-color: #787878;
-}
-
 .textarea-container {
-    padding: 0.69vw 3.13vw 1.67vw 3.13vw;
+    margin-bottom: 1.29vw;
 }
 
 .textarea-text {
-    margin: 0 0 0.35vw 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    display: block;
     font-size: 1.11vw;
-    line-height: 1.11vw;
+    font-weight: 700;
     color: #787878;
+    margin: 0 0 0.35vw 0;
 }
 
 .textarea {
     outline: none;
     width: 100%;
-    height: 17.08vw;
+    height: 17.0833333333vw;
     border: 2px solid #787878;
     resize: none;
-    padding-left: 1.04vw;
+    padding-left: 1.042vw;
     padding-top: 0.49vw;
     font-size: 1.94vw;
-    color: rgb(120, 120, 120);
+    color: #787878;
     font-weight: 700;
 }
 
 .checkbox-container {
-    margin-left: 2.99vw;
-    height: 1.53vw;
+    margin-bottom: 3.6vw;
 }
 
 .input-checkbox {
@@ -300,20 +255,23 @@ main {
     opacity: 0;
 }
 
+.checkbox-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.97vw;
+    font-weight: 400;
+    color: #787878;
+}
+
 .input-checkbox + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
 }
 
-.checkbox-text {
-    font-size: 0.97vw;
-    font-weight: 400;
-    color: rgb(120, 120, 120);
-}
-
 .input-checkbox:checked + label::before {
-    background-color: #787878;
+    color: #787878;
 }
 
 .input-checkbox + label::before {
@@ -327,10 +285,23 @@ main {
     margin-right: 0.69vw;
 }
 
+.main-form__button {
+    align-self: center;
+    height: 3.611vw;
+    width: 12.5vw;
+    border: none;
+    background: #1A226B;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 1.67vw;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
 @media (max-width: 768px) {
     header {
-        height: 10.4166666667vw;
-        padding: 3.1vw 1.5vw 3.6458333333vw 2.6041666667vw;
+        height: 10.42vw;
+        padding: 3.1vw 1.5vw 3.65vw 2.60vw;
     }
 
     .logo {
@@ -345,21 +316,22 @@ main {
         margin-left: 4.4vw;
     }
 
-    .main-form {
-        height: 113.93vw;
+    .container {
         width: 78.125vw;
-        box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 25%);
-        margin: 10.42vw 11vw;
+        margin: 10.5vw 11vw;
+        padding: 3.2vw 6vw 4.82vw;
+    }
+
+    .main-form {
+        padding-top: 0.5625vw;
     }
 
     .main-form__h1 {
         font-size: 6.51vw;
-        margin: 3.39vw 0 2.21vw 0;
-        line-height: 1;
     }
 
     .main-form__email__label {
-        margin: 0 0 0.39vw 6.90vw;
+        margin: 0 0 0.37vw 0;
         font-size: 2.083vw;
     }
 
@@ -367,25 +339,23 @@ main {
         height: 6.38vw;
         padding-left: 1.95vw;
         font-size: 3.64vw;
-        margin-left: 5.86vw;
-        margin-right: 5.86vw;
+        margin-bottom: 1.43vw;
     }
 
     .main-form__password__label {
-        margin: 1.43vw 0 0.39vw 6.90vw;
+        margin: 0 0 0.39vw 0;
         font-size: 2.083vw;
     }
 
     .main-form__password {
         height: 6.38vw;
-        padding-left: 1.95vw;
         font-size: 3.64vw;
-        margin-left: 5.86vw;
-        margin-right: 5.86vw;
+        padding-left: 1.95vw;
+        margin-bottom: 1.2vw;
     }
 
     .main-form__password__label__two {
-        margin: 1.43vw 0 0.39vw 6.90vw;
+        margin: 0 0 0.39vw 0;
         font-size: 2.083vw;
     }
 
@@ -393,29 +363,72 @@ main {
         height: 6.38vw;
         padding-left: 1.95vw;
         font-size: 3.64vw;
-        margin-left: 5.86vw;
-        margin-right: 5.86vw;
+        margin-bottom: 1.3vw;
     }
 
-    .gender__radio {
-        margin-left: 5.60vw;
+    .gender {
+        margin: 0 0 0.68vw 0;
+        font-size: 2.08vw;
+    }
+
+    .gender__man {
+        font-size: 1.82vw;
+        margin-bottom: 0.8vw;
+    }
+
+    .input-man + label::before {
+        width: 0.9vw;
+        height: 0.9vw;
+        padding: 0.26vw;
+        margin-right: 1.31vw;
+    }
+
+    .gender__women {
+        font-size: 1.82vw;
+        margin: 0 0 0.56vw 0;
+    }
+
+    .input-women + label::before {
+        width: 0.9vw;
+        height: 0.9vw;
+        padding: 0.26vw;
+        margin-right: 1.31vw;
     }
 
     .textarea-container {
-        padding-left: 5.86vw;
+        margin-bottom: 2.6vw;
+    }
+
+    .textarea-text {
+        font-size: 2.08vw;
+        margin: 0 0 0.65vw 0;
     }
 
     .textarea {
-        width: 66.41vw;
         height: 32.03vw;
+        padding-left: 1.95vw;
+        padding-top: 0.91vw;
+        font-size: 3.645vw;
     }
 
-    .main-form__button1 {
-        width: 23.44vw;
-        height: 6.77vw;
-        font-size: 3.13vw;
-        line-height: 2.08vw;
-        margin-top: 6.77vw;
-        margin-bottom: 4.82vw;
+    .checkbox-container {
+        margin-bottom: 7.3vw;
     }
+
+    .checkbox-text {
+        font-size: 1.82vw;
+    }
+
+    .input-checkbox + label::before {
+        width: 1.7vw;
+        height: 1.7vw;
+        padding: 0.45vw;
+        margin-right: 1.30vw;
+    }
+
+    .main-form__button {
+        height: 6.77vw;
+        width: 23.44vw;
+        font-size: 3.125vw;
+    } 
 }

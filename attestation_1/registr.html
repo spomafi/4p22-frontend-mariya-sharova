@@ -19,37 +19,37 @@
         </div>
     </header>
     <main>
-        <form class="main-form">
+        <div class="container">
             <h1 class="main-form__h1">Регистрация</h1>
-            <p class="main-form__email__label">Email</p>
-            <input type="email" placeholder="Введите email" class="main-form__email">
-            <p class="main-form__password__label">Пароль</p>
-            <input type="password" placeholder="Введите пароль" class="main-form__password">
-            <p class="main-form__password__label__two">Подтверждение пароля</p>
-            <input type="password" placeholder="Подтвердите пароль" class="main-form__password__two">
-            <div class="gender__radio">
-                <legend class="gender">Пол</legend>
-                <div class="gender__man">
-                    <input class="input-man" type="radio" name="sex" id="sex-man" value="man">
-                    <label class="label-man" for="sex-man">Мужчина</label>
+            <form class="main-form" action="#">
+                <p class="main-form__email__label">Email</p>
+                <input type="email" placeholder="Введите email" class="main-form__email">
+                <p class="main-form__password__label">Пароль</p>
+                <input type="password" placeholder="Введите пароль" class="main-form__password">
+                <p class="main-form__password__label__two">Подтверждение пароля</p>
+                <input type="password" placeholder="Подтвердите пароль" class="main-form__password__two">
+                <div class="gender__radio">
+                    <legend class="gender">Пол</legend>
+                    <div class="gender__man">
+                        <input class="input-man" type="radio" name="sex" id="sex-man" value="man">
+                        <label class="label-man" for="sex-man">Мужчина</label>
+                    </div>
+                    <div class="gender__women">
+                        <input class="input-women" type="radio" name="sex" id="sex-woman" value="woman">
+                        <label class="label-women" for="sex-woman">Женщина</label>
+                    </div>
                 </div>
-                <div class="gender__women">
-                    <input class="input-women" type="radio" name="sex" id="sex-woman" value="woman">
-                    <label class="label-women" for="sex-woman">Женщина</label>
+                <div class="textarea-container">
+                    <span class="textarea-text">О себе</span>
+                    <textarea class="textarea" name="comments" id="textarea-comment" placeholder="Расскажите о себе..."></textarea>
                 </div>
-            </div>
-            <div class="textarea-container">
-                <p class="textarea-text">О себе</p>
-                <textarea class="textarea" name="comments" id="textarea-comment" placeholder="Расскажите о себе..."></textarea>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" class="input-checkbox" id="checkbox">
-                <label class="checkbox-text" for="checkbox">Я согласен получать обновления на почту</label>
-            </div>
-            <div class="main-form__button">
-                <button class="main-form__button1">Регистрация</button>
-            </div>
-        </form>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="input-checkbox" id="checkbox-button">
+                    <label class="checkbox-text" for="checkbox-button">Я согласен получать обновления на почту</label>
+                </div>
+                <button class="main-form__button">Регистрация</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>

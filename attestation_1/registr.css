@@ -301,7 +301,7 @@ body {
 @media (max-width: 768px) {
     header {
         height: 10.42vw;
-        padding: 3.1vw 1.5vw 3.65vw 2.60vw;
+        padding: 3.1vw 3.7vw 3.65vw 2.60vw;
     }
 
     .logo {
@@ -377,8 +377,8 @@ body {
     }
 
     .input-man + label::before {
-        width: 0.9vw;
-        height: 0.9vw;
+        width: 1.56vw;
+        height: 1.56vw;
         padding: 0.26vw;
         margin-right: 1.31vw;
     }
@@ -389,8 +389,8 @@ body {
     }
 
     .input-women + label::before {
-        width: 0.9vw;
-        height: 0.9vw;
+        width: 1.56vw;
+        height: 1.56vw;
         padding: 0.26vw;
         margin-right: 1.31vw;
     }

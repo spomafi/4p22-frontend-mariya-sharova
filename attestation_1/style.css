@@ -66,7 +66,7 @@ main {
     height: 26.60vw;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-    margin: 8.68vw 29.17vw;
+    margin: 8.68vw 30.35vw 16.18vw 27.99vw;
 }
 
 .main-form__h1 {
@@ -124,6 +124,7 @@ main {
     padding-left: 1.042vw;
     font-size: 1.94vw;
     color: #787878;
+    margin-top: 0;
 }
 
 .main-form__button {
@@ -162,6 +163,11 @@ main {
 
     .header-links__input {
         margin-left: 4.4vw;
+        font-size: 2.08vw;
+    }
+
+    .header-links__registration {
+        font-size: 2.08vw;
     }
 
     .main-form {
@@ -173,7 +179,7 @@ main {
 
     .main-form__h1 {
         font-size: 6.51vw;
-        margin: 3.39vw 0 2.21vw 0;
+        margin: 3.39vw 0 2.9vw 0;
         line-height: 1;
     }
 
@@ -186,12 +192,13 @@ main {
         height: 6.38vw;
         padding-left: 1.95vw;
         font-size: 3.64vw;
+        margin-top: 0.2vw;
         margin-left: 5.86vw;
         margin-right: 5.86vw;
     }
 
     .main-form__password__label {
-        margin: 1.43vw 0 0.39vw 6.90vw;
+        margin: 1.5vw 0 0.39vw 6.90vw;
         font-size: 2.083vw;
     }
 
@@ -201,6 +208,7 @@ main {
         font-size: 3.64vw;
         margin-left: 5.86vw;
         margin-right: 5.86vw;
+        margin-top: 0.9vw;
     }
 
     .main-form__button1 {

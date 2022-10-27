@@ -91,3 +91,35 @@ body::before {
     text-align: center;
     height: 5vw;
 }
+
+@media screen and (max-width: 580px) {
+    .calculator__form {
+        width: 70vw;
+    }
+
+    .text-calculator {
+        font-size: 5vw;
+    }
+
+    .calculator__input {
+        padding: 1.5vw 3vw;
+    }
+
+    .number-first, .operators, .number-second {
+        width: 19.3vw;
+        height: 8.5vw;
+        font-size: 2.5vw;
+    }
+
+    .button {
+        width: 19.3vw;
+        height: 4.8vw;
+        font-size: 2.8vw;
+    }
+
+    .result {
+        margin: 2vw 4vw;
+        padding-top: 1vw;
+        font-size: 3vw;
+    }
+}

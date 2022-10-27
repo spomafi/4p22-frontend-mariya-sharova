@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatort</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+</head>
+<body>
+    <main class="main">
+        <form class="calculator__form">
+            <h1 class="text-calculator">Calculator</h1>
+            <div class="calculator__input">
+                <input class="number-first" type="number" placeholder="Число 1" id="first">
+                <input class="operators" type="text" placeholder="(+, -, /, *)" id="operators">
+                <input class="number-second" type="number" placeholder="Число 2" id="second">
+            </div>
+            <div class="calculator__button">
+                <button class="button" id="submit">=</button>
+            </div>
+            <div class="result" id="result"></div>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
